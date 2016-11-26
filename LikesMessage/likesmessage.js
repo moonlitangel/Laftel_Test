@@ -12,7 +12,7 @@ var test2 = [];
 var test3 = ["maplestory", "LOL", "HOS", "hearthstone"];
 var test4 = ["maplestory", "LOL", "HOS", "hearthstone", "overwatch"];
 
-document.getElementById('test1').innerHTML = '{' + test1 +'} : ' + likes(test1);
-document.getElementById('test2').innerHTML = '{' + test2 +'} : ' + likes(test2);
-document.getElementById('test3').innerHTML = '{' + test3 +'} : ' + likes(test3);
-document.getElementById('test4').innerHTML = '{' + test4 +'} : ' + likes(test4);
+document.getElementById('test1').innerText = '{' + test1 +'} : ' + likes(test1);
+document.getElementById('test2').innerText = '{' + test2 +'} : ' + likes(test2);
+document.getElementById('test3').innerText = '{' + test3 +'} : ' + likes(test3);
+document.getElementById('test4').innerText = '{' + test4 +'} : ' + likes(test4);
