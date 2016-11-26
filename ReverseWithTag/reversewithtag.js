@@ -1,8 +1,6 @@
 function reverse(str) {
   var tag = str.split(" ");
-  var arr = [];
-  var num = 0;
-  var tempNum = 0;
+
   for(var i=0;i<tag.length;i++) {
     if(tag[i].charAt(0) === "<") {
       var tagName = tag[i].replace("<", "</");
