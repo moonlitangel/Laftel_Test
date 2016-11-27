@@ -1,4 +1,8 @@
 # Laftel_Test
+## Run
+```
+TestRun.html   또는  /testname/testname.html
+```
 ## 1. Likes Message
 문자열 배열을 인자로 넣으면, `~~ likes it` 문구를 반환하는 코드를 작성하세요.
 
