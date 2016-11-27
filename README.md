@@ -46,16 +46,17 @@ Player1("Ks Kc Jd Kd Jc"), Player2("Jh Js Jd Kd Jc") : Player2 win
 Player1("Ad Kh Ac 7h 7d"), Player2("Ah Kh Ac 7h 7d") : Draw
 ```
 
--규칙
+### 규칙
+
 카드 한 장은 아래와 같은 순서대로 값이 높아집니다.
 
-2, 3, 4, 5, 6, 7, 8, 9, T(10), J(Jack), Q(Queen), K(King), A(Ace)
+- 2, 3, 4, 5, 6, 7, 8, 9, T(10), J(Jack), Q(Queen), K(King), A(Ace)
 
 무늬는 높고 낮음이 없으며, 다음 4가지 소문자로 표시되어 있습니다.
 
-c (Club - ♣), d (Diamond - ♦), h (Heart - ♥), s (Spade - ♠)
+- c (Club - ♣), d (Diamond - ♦), h (Heart - ♥), s (Spade - ♠)
 
-예시)
+### 예시
 
 As : Ace of Spade
 
@@ -87,19 +88,13 @@ Td : Ten of Diamonds
 
 두 사람의 패가 같은 계급이라면, 계급을 구성하는 카드 중 높은 쪽을 쥔 사람이 이깁니다.
 
-예를 들면,
-
 - 8 One Pair는 5 One Pair를 이깁니다.
 
 - K Full House(K-K-K-8-8)는 Q Full House(Q-Q-Q-A-A)를 이깁니다.
 
 - A High Flush(Ac-Jc-8c-6c-4c)는 K High Flush(Kc-Qc-Jc-8c-6c)을 이깁니다.
 
-- Straight의 경우, A High Straight(A-K-Q-J-T)는 8 High Straight(8-7-6-5-4)에 이기지만,
-
-- 예외적으로 5 High Straight(5-4-3-2-1)에서 Ace는 가장 낮은 카드로 간주되어,
-
-8 High Straight(8-7-6-5-4)에 집니다.
+- Straight의 경우, A High Straight(A-K-Q-J-T)는 8 High Straight(8-7-6-5-4)에 이기지만, 예외적으로 5 High Straight(5-4-3-2-1)에서 Ace는 가장 낮은 카드로 간주되어, 8 High Straight(8-7-6-5-4)에 집니다.
 
 계급을 이루는 카드 숫자까지 같으면, 다른 카드를 높은 순서대로 비교해서 승부를 정합니다.
 
