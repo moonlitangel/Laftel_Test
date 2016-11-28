@@ -108,7 +108,11 @@ function playerResult(arr1, arr2) {
     return "player1 Win";
   }
   else if(cardCompare(player1) === cardCompare(player2)) {
-    if(cardCompare(player1) === 3) {
+    if(cardCompare(player1) === 1) {
+      if(playerCompare(player1, player2, 0)) return playerCompare(player1, player2, 0);
+      else return "Draw!";
+    }
+    else if(cardCompare(player1) === 3) {
       if(playerCompare(player1, player2, 4)) return playerCompare(player1, player2, 4);
       else return "Draw!";
     }
@@ -126,13 +130,8 @@ function playerResult(arr1, arr2) {
       if(!playerCompare(player1, player2, 4)) return "Draw!";
     }
     else if(cardCompare(player1) === 6) {
-      for(var i=0; i<player1.length; i++) {
-        if(playerCompare(player1, player2, i)){
-          return playerCompare(player1, player2, i);
-          break;
-        }
-        if(!playerCompare(player1, player2, 4)) return "Draw!";
-      }
+      if(playerCompare(player1, player2, 0)) return playerCompare(player1, player2, 0);
+      else return "Draw!";
     }
     else if(cardCompare(player1) === 8) {
       if(playerCompare(player1, player2, 3)) return playerCompare(player1, player2, 3);
